@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Projekt">
+    
+    <listeners>
+        <listener class-name="qa.listener.ScreenShotListener"/>
+    </listeners>
+    
+    <test name="Commercial Test">
+        <classes>
+            <class name="test.RegisterTest"/>
+            <class name="test.LoginTest"/>
+            <class name="test.MyAccountTest"/>
+            <class name="test.DashboardTest"/>
+            <class name="test.ShoppingCartTest"/>
+            <class name="test.EmptyShoppingCartTest"/>
+        </classes>
+    </test>
+</suite>

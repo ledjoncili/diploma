@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Projekt">
+    <test name="Commercial Test">
+        <classes>
+            <class name="test.CucumberRunner"/>
+        </classes>
+    </test>
+</suite>

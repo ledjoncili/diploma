@@ -1,0 +1,82 @@
+https://www.saucedemo.com/ 
+
+---------------------------------------------------------
+Log in 
+
+Test case 1 - Wrong credentials
+Navigate to login page
+User types 'test' as username
+and 'password' as password
+then when clicking Login button 
+An error is shown
+
+
+Test case 2 - Successful Login
+Navigate to login page
+User types standard_user as username
+and secret_sauceas password
+then when clicking Login button 
+User is redirected to home page
+
+Test case 3 - Log out
+Then user opens menu
+on the very bottom Logout button is displayed
+User clicks on Logout button
+Login page is shown 
+
+-----------------------------------------------------------
+
+Products 
+
+User navigates to home page
+List of products is shown
+User clicks on first item
+Product details page is open
+Verify details are the correct one
+User clicks on Back to products 
+Products overview page is shown
+
+User navigates to home page
+List of products is shown
+User click on filter dropdown
+User selects Price to low option
+Products are sorted based on selection
+
+
+----------------------------------------------------------------
+Shopping cart
+
+
+User navigates to home page
+List of products is shown
+User clicks Add to cart button for Sauce Labs Backpack
+No 1 pops up in the shopping cart icon on top right
+User clicks shopping cart icon
+Added item is listed in the cart 
+And details are as expected
+
+
+User clicks remove button
+Item is removed from shopping cart
+user clicks continue shopping button
+products overview page is opened
+user adds to cart sauce labs bike light
+user clicks on shopping cart icon
+product is shown in the list
+
+-----------------------------------------------------------------
+
+User navigates to shopping cart
+Item is in the cart
+User clicks checkout button
+Checkout page is opened
+User clicks cancel 
+User is redirected back on shopping cart page
+User clicks again Checkout
+Checkout page is opened
+User fills the from information
+and clicks continue
+Checkout details are shown
+User cliks on finish button
+successful order page is shown
+
