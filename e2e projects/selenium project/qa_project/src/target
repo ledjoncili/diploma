@@ -1,5 +1,131 @@
-Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 34205
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1692992690.358][WARNING]: This version of ChromeDriver has not been tested with Chrome version 115.
+[1693430116.689][INFO]: Starting ChromeDriver 116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382}) on port 19751
+[1693430116.689][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1693430116.993][INFO]: [6a238cd26acf170307495d1e8dfb5d6f] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--remote-allow-origins=*" ],
+            "extensions": [  ]
+         }
+      } ]
+   }
+}
+[1693430116.995][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1693430116.995][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1693430116.995][INFO]: Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-allow-origins=* --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/fd/g2zs6xkn3hs2658hnpf8cpbw0000gq/T/.org.chromium.Chromium.NHyKPO data:,
+[1693430118.701][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1693430118.740][INFO]: [6a238cd26acf170307495d1e8dfb5d6f] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "116.0.5845.140",
+      "chrome": {
+         "chromedriverVersion": "116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382})",
+         "userDataDir": "/var/folders/fd/g2zs6xkn3hs2658hnpf8cpbw0000gq/T/.org.chromium.Chromium.NHyKPO"
+      },
+      "fedcm:accounts": true,
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:52212"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac os x",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "6a238cd26acf170307495d1e8dfb5d6f"
+}
+[1693430118.952][INFO]: [6a238cd26acf170307495d1e8dfb5d6f] COMMAND MaximizeWindow {
+}
+[1693430118.967][INFO]: Waiting for pending navigations...
+[1693430118.970][INFO]: Done waiting for pending navigations. Status: ok
+[1693430119.393][INFO]: Waiting for pending navigations...
+[1693430119.394][INFO]: Done waiting for pending navigations. Status: ok
+[1693430119.394][INFO]: [6a238cd26acf170307495d1e8dfb5d6f] RESPONSE MaximizeWindow {
+   "height": 799,
+   "width": 1440,
+   "x": 0,
+   "y": 25
+}
+[1693430119.399][INFO]: [6a238cd26acf170307495d1e8dfb5d6f] COMMAND SetTimeouts {
+   "implicit": 5000
+}
+[1693430119.400][INFO]: [6a238cd26acf170307495d1e8dfb5d6f] RESPONSE SetTimeouts
+[1693430119.900][INFO]: [6a238cd26acf170307495d1e8dfb5d6f] COMMAND Quit {
+}
+[1693430119.959][INFO]: [6a238cd26acf170307495d1e8dfb5d6f] RESPONSE Quit

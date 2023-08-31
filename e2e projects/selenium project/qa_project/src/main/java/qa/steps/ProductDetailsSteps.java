@@ -1,8 +1,8 @@
 package qa.steps;
 
-import cucumber.api.DataTable;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Then;
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import qa.driver.Driver;
@@ -19,10 +19,10 @@ public class ProductDetailsSteps {
     @Then("^make sure the following details are shown$")
     public void makeSureTheFollowingDetailsAreShown(DataTable dataTable) {
         Driver.getWait().until(ExpectedConditions.visibilityOf(ProductDetailsPage.productTitle));
-        String expectedTitle = dataTable.raw().get(0).get(0);
-        String expectedPrice = dataTable.raw().get(1).get(0);
-        String expectedDescriptionHeader = dataTable.raw().get(2).get(0);
-        String expectedDescriptionBody = dataTable.raw().get(3).get(0);
+        String expectedTitle = dataTable.cells().get(0).get(0);
+        String expectedPrice = dataTable.cells().get(1).get(0);
+        String expectedDescriptionHeader = dataTable.cells().get(2).get(0);
+        String expectedDescriptionBody = dataTable.cells().get(3).get(0);
 
 
         Assert.assertEquals(ProductDetailsPage.productTitle.getText(), expectedTitle);

@@ -1,6 +1,6 @@
 package qa.steps;
 
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Then;
 import org.testng.Assert;
 import qa.driver.Driver;
 

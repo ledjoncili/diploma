@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxDriverService;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import java.io.File;
@@ -13,8 +14,10 @@ import java.io.File;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class DriverFactory {
 
-    private static final String DRIVER_NAME = "webdriver.chrome.driver";
-    private static final String CHROME = "src/main/resources/driver/chromedriver.exe";
+    private static final String CHROME_DRIVER = "webdriver.chrome.driver";
+    private static final String GECKO_DRIVER = "webdriver.gecko.driver";
+    private static final String CHROME = "src/main/resources/driver/macos/chromedriver";
+    private static final String FIREFOX = "src/main/resources/driver/macos/geckodriver";
 
     public static WebDriver getDriver(final DriverOption driverOption){
         switch (driverOption){
@@ -25,6 +28,7 @@ public class DriverFactory {
                     .build();
                 return new ChromeDriver(service);
             case FIREFOX:
+                initFirefox();
                 return new FirefoxDriver();
             case IE:
                 return new InternetExplorerDriver();
@@ -34,7 +38,10 @@ public class DriverFactory {
     }
 
     private static void initChrome(){
-        System.setProperty(DRIVER_NAME, CHROME);
+        System.setProperty(CHROME_DRIVER, CHROME);
     }
 
+    private static void initFirefox(){
+        System.setProperty(GECKO_DRIVER, FIREFOX);
+    }
 }

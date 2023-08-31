@@ -1,9 +1,8 @@
 package qa.steps;
-
-import cucumber.api.DataTable;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
@@ -49,7 +48,7 @@ public class HomeSteps {
 
     @Then("^make sure an error message with the following text is shown$")
     public void checkErrorMessage(DataTable dataTable) {
-        Assert.assertEquals(homePage.getErrorMessage(), dataTable.raw().get(0).get(0));
+        Assert.assertEquals(homePage.getErrorMessage(), dataTable.asList().get(0));
     }
 
     @Then("^click product with name '(.+?)'$")
