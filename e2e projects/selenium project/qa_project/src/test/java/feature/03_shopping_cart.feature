@@ -7,7 +7,7 @@ Feature: Product details scenarios
     And click 'Login' button
     Then make sure user navigates to products page
 
-  @Demo
+  #@Demo
   @03 @03.1
   Scenario:03.1 -Add and delete products into shopping cart
     And Add to Cart product 'Sauce Labs Onesie'

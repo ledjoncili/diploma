@@ -14,10 +14,15 @@ public class ShoppingCartPage extends Page {
     @FindBy(id = "continue-shopping")
     public static WebElement continueShopping;
 
+    @FindBy(id = "checkout")
+    public static WebElement checkoutButton;
+
     public void clickButton(String buttonName) {
         WebElement webElement;
         if (buttonName.equals("Continue Shopping")) {
             webElement = continueShopping;
+        } else if (buttonName.equals("Checkout")) {
+            webElement = checkoutButton;
         } else throw new NotFoundException(buttonName + " button not found!");
 
         Driver.getWait().until(ExpectedConditions.elementToBeClickable(webElement));
