@@ -1,5 +1,6 @@
 package qa.steps;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -26,5 +27,10 @@ public class CheckoutSteps {
         input.sendKeys(text);
 
         Assert.assertEquals(input.getAttribute("value"), text);
+    }
+
+    @And("check the following message is shown")
+    public void checkTheFollowingMessageIsShown(DataTable dataTable) {
+        Assert.assertEquals(Driver.getElement(".complete-header", LocatorType.CSS).getText(), "Thank you for your order!");
     }
 }

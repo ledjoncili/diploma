@@ -25,9 +25,8 @@ Feature: Checkout product scenarios
     Then type 'Ledjon' in 'First Name' input field
     And type 'Cili' in 'Last Name' input field
     And type '5001' in 'Zip/Postal Code' input field
-    Then  click 'Continue' button from cart page
+    Then  click 'Continue' button from checkout page
     Then make sure user navigates to checkout step 2 page
-
-# todo - check checkout info , listed items, cart details etc
-#  click finish
-#  check complete order message
+    Then click 'Finish' button from checkout page
+    And check the following message is shown
+      | Thank you for your order! |

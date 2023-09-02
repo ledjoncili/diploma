@@ -21,14 +21,12 @@ public class CheckoutPage extends Page {
 
 
     public void clickButton(String buttonName) {
-        WebElement webElement;
-        if (buttonName.equals("Cancel")) {
-            webElement = cancelButton;
-        } else if (buttonName.equals("Continue")) {
-            webElement = continueButton;
-        } else if (buttonName.equals("Finish")) {
-            webElement = finishButton;
-        } else throw new NotFoundException(buttonName + " button not found!");
+        WebElement webElement = switch (buttonName) {
+            case "Cancel" -> cancelButton;
+            case "Continue" -> continueButton;
+            case "Finish" -> finishButton;
+            default -> throw new NotFoundException(buttonName + " button not found!");
+        };
 
         Driver.getWait().until(ExpectedConditions.elementToBeClickable(webElement));
         webElement.click();

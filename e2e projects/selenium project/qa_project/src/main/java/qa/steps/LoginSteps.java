@@ -6,23 +6,23 @@ import io.cucumber.java.en.Then;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import qa.driver.Driver;
-import qa.page.DemoModalPage;
+import qa.page.LoginPage;
 
-public class DemoModalSteps {
-    private final DemoModalPage demoModalPage;
+public class LoginSteps {
+    private final LoginPage loginPage;
 
-    public DemoModalSteps() {
-        demoModalPage = new DemoModalPage();
+    public LoginSteps() {
+        loginPage = new LoginPage();
     }
 
     @Then("^we type '(.+?)' in the '(.+?)' input field$")
     public void navigateToHomePage(String text, String inputField) {
-        demoModalPage.typeInTheInputField(text, inputField);
+        loginPage.typeInTheInputField(text, inputField);
     }
 
     @And("^we click '(.+?)' button from modal$")
     public void clickModalButton(String buttonName) {
-        demoModalPage.clickModalButton(buttonName);
+        loginPage.clickModalButton(buttonName);
     }
 
     @Then("^order is successfully placed and the following message is shown$")

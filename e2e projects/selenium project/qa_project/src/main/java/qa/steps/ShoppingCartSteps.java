@@ -1,6 +1,5 @@
 package qa.steps;
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -8,7 +7,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import qa.driver.Driver;
 import qa.driver.LocatorType;
-import qa.page.DemoCartPage;
 import qa.page.ShoppingCartPage;
 
 import java.util.List;
@@ -31,10 +29,6 @@ public class ShoppingCartSteps {
         Assert.assertEquals(expectedList, actualList);
     }
 
-    @And("^check total price is '(.+?)'$")
-    public void checkTotalPriceIs(String price) {
-        Assert.assertEquals(DemoCartPage.price.getText(), price);
-    }
 
     @Then("^click '(.+?)' button from cart page$")
     public void clickPlaceOrderButtonFromCartPage(String buttonName) {
