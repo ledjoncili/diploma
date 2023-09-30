@@ -1,4 +1,4 @@
-describe('Product Details', () => {
+describe('Listo dhe filtro produktet', () => {
     it('02.1 - should navigate to product details page and return to product overview page', () => {
         cy.login('standard_user', 'secret_sauce')
 

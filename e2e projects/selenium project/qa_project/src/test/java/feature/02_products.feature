@@ -1,4 +1,4 @@
-Feature: Product details scenarios
+Feature: Listo dhe filtro produktet
 
   Background: Log in
     Given the homepage is opened
