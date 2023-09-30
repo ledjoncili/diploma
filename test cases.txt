@@ -1,7 +1,7 @@
 https://www.saucedemo.com/ 
 
 ---------------------------------------------------------
-Identifikimi dhe Hyrja e Përdoruesit
+1- Identifikimi dhe Hyrja e Përdoruesit
 
 Test case 1 - Wrong credentials
 Navigate to login page
@@ -26,7 +26,7 @@ Login page is shown
 
 -----------------------------------------------------------
 
-Listo dhe filtro produktet
+2- Listo dhe filtro produktet
 
 User navigates to home page
 List of products is shown
@@ -44,7 +44,7 @@ Products are sorted based on selection
 
 
 ----------------------------------------------------------------
-Shopping cart
+3- Shporta e Blerjeve
 
 
 User navigates to home page

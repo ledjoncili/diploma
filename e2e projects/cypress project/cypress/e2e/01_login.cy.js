@@ -1,4 +1,4 @@
-describe('Identifikimi dhe Hyrja e Përdoruesit', () => {
+describe('01 - Identifikimi dhe Hyrja e Përdoruesit', () => {
     it('01.1 - should display an error message for wrong credentials', () => {
         cy.visit('https://www.saucedemo.com/', { retryOnStatusCodeFailure: true, retryOnNetworkFailure: true });
 

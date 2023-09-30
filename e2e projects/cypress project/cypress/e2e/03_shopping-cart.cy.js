@@ -1,4 +1,4 @@
-describe('Sauce Demo E2E Tests', () => {
+describe('03 - Shporta e Blerjeve', () => {
     beforeEach(() => {
         cy.login('standard_user', 'secret_sauce')
         // Verify that the user is on the product overview page

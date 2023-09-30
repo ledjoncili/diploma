@@ -1,4 +1,4 @@
-Feature: Product details scenarios
+Feature:03 - Shporta e Blerjeve
 
   Background: Log in
     Given the homepage is opened

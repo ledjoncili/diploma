@@ -1,4 +1,4 @@
-Feature: Listo dhe filtro produktet
+Feature:02 - Listo dhe filtro produktet
 
   Background: Log in
     Given the homepage is opened
