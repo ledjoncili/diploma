@@ -1,4 +1,4 @@
-Feature: Log in scenarios
+Feature: Identifikimi dhe Hyrja e Përdoruesit
 
   #@Demo
   @01 @01.1

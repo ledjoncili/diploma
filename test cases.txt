@@ -1,7 +1,7 @@
 https://www.saucedemo.com/ 
 
 ---------------------------------------------------------
-Log in 
+Identifikimi dhe Hyrja e Përdoruesit
 
 Test case 1 - Wrong credentials
 Navigate to login page
