@@ -1,6 +1,6 @@
 Feature:01 - Identifikimi dhe Hyrja e Përdoruesit
 
-  #@Demo
+  @Demo
   @01 @01.1
   Scenario: 01.1 - Unsuccessful Login - Wrong credentials
     Given the homepage is opened
@@ -10,7 +10,7 @@ Feature:01 - Identifikimi dhe Hyrja e Përdoruesit
     Then make sure an error message with the following text is shown
       | Epic sadface: Username and password do not match any user in this service |
 
-  #@Demo
+  @Demo
   @01 @01.2
   Scenario: 01.2 - Successful Login
     Given the homepage is opened
