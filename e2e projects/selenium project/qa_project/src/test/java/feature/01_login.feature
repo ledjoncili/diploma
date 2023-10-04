@@ -8,9 +8,9 @@ Feature:01 - Identifikimi dhe Hyrja e Përdoruesit
     And we type 'password' in the 'Password' input field
     And click 'Login' button
     Then make sure an error message with the following text is shown
-      | Epic sadface: Username and password do not match any user in this service |
+      | Epic sadfacsfe: Username and password do not match any user in this service |
 
-  @Demo
+  #@Demo
   @01 @01.2
   Scenario: 01.2 - Successful Login
     Given the homepage is opened

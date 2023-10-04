@@ -8,7 +8,7 @@ Feature: Checkout product scenarios
     Then make sure user navigates to products page
 
 
-  @Demo
+  #@Demo
   @04 @04.1
   Scenario:04.1 - Place a successful order
     And Add to Cart product 'Sauce Labs Backpack'
