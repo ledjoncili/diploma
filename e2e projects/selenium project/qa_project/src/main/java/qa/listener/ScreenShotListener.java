@@ -27,6 +27,7 @@ public class ScreenShotListener extends TestListenerAdapter {
                 File destFile = new File(reportDirectory + "/failure_screenshots/" + methodName + "_" + formater.format(calendar.getTime()) + ".png");
                 FileUtils.copyFile(scrFile, destFile);
                 Reporter.log("<a href='" + destFile.getAbsolutePath() + "'> <img src='" + destFile.getAbsolutePath() + "' height='100' width='100'/> </a>");
+                System.out.println(destFile.getAbsolutePath());
             } catch (IOException e) {
                 e.printStackTrace();
             }

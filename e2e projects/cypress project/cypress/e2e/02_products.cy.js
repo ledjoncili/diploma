@@ -15,9 +15,6 @@ describe('02 - Listo dhe filtro produktet', () => {
         cy.get('.inventory_details_name').should('be.visible')
         cy.get('.inventory_details_price').should('be.visible')
 
-
-        // todo - Add more assertions to verify other details as needed
-
         // Click on the "Back to products" button
         cy.get('.inventory_details_back_button').click()
 
